@@ -248,6 +248,7 @@
     <Compile Include="Assets\Scripts\Collision\CollisionState.cs" />
     <Compile Include="Assets\Scripts\Input\InputManager.cs" />
     <Compile Include="Assets\Scripts\Input\InputState.cs" />
+    <Compile Include="Assets\Scripts\Managers\AreaManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonManagerHandler.cs" />
     <Compile Include="Assets\Scripts\Managers\FeedBackManager.cs" />

@@ -55,7 +55,13 @@ public class CollisionState : MonoBehaviour
 
             Gizmos.DrawWireSphere(pos, collisionRadius);
         }
+    }
 
-       
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Area")
+        {
+            
+        }
     }
 }
