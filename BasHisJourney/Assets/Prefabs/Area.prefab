@@ -222,22 +222,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e279260d7f0a9fd4da0439eb9353951b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blocks:
+  BlocksLeft:
   - {fileID: 0}
+  BlocksRight:
   - {fileID: 0}
   left: {fileID: 1427832392044970}
   right: {fileID: 1441335169636856}
-  NewPosition:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  NewPositionLeft: {x: 0, y: 0, z: 0}
+  NewPositionRight: {x: 0, y: 0, z: 0}
   StartPosition:
   - {x: 2.0067e-41, y: 1e-45, z: 0}
   - {x: 0, y: 0, z: 0}
-  BlockSpeed: 6
+  BlockSpeed: 3
   OnOff: 0
-  currentState:
-  - Moving To Position 2
-  - Moving To Position 1
+  currentStateLeft: 
+  currentStateRight: Moving To Position 2
 --- !u!212 &212135420290654108
 SpriteRenderer:
   m_ObjectHideFlags: 1

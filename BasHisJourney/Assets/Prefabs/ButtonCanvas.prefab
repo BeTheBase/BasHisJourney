@@ -225,8 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationAngle: 45
+  FbManager: {fileID: 0}
+  BmHandler: {fileID: 0}
 --- !u!114 &114058098130147186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationAngle: 45
+  FbManager: {fileID: 0}
+  BmHandler: {fileID: 0}
 --- !u!114 &114130866357398500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -383,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationAngle: 45
+  FbManager: {fileID: 0}
+  BmHandler: {fileID: 0}
 --- !u!114 &114341452317096206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -847,8 +847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  rotationAngle: 45
+  FbManager: {fileID: 0}
+  BmHandler: {fileID: 0}
 --- !u!114 &114921520410412816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,8 +860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  rotationAngle: 45
+  FbManager: {fileID: 0}
+  BmHandler: {fileID: 0}
 --- !u!114 &114935731111606398
 MonoBehaviour:
   m_ObjectHideFlags: 1
