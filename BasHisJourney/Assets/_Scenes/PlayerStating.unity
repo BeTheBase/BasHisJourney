@@ -262,7 +262,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1316093234305302, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb, type: 2}
@@ -1316,6 +1316,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 1316093234305302, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb, type: 2}
   m_IsPrefabParent: 0
@@ -1731,7 +1735,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 22409990, guid: 81154777d5417884981849c5243f6c01, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 295.5
+      value: 307.5
       objectReference: {fileID: 0}
     - target: {fileID: 22409990, guid: 81154777d5417884981849c5243f6c01, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2263,7 +2267,7 @@ RectTransform:
   m_GameObject: {fileID: 2056934316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.6800003, y: 1, z: -300}
-  m_LocalScale: {x: 0.40368852, y: 0.40368852, z: 0.40368852}
+  m_LocalScale: {x: 0.420082, y: 0.420082, z: 0.420082}
   m_Children:
   - {fileID: 415659767}
   - {fileID: 1948808827}
@@ -2283,6 +2287,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: BlocksLeft.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: BlocksRight.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4067806938419378, guid: 8abed6a06294ee346833ca71a0344f74, type: 2}
       propertyPath: m_LocalPosition.x
       value: 194
@@ -2317,6 +2331,29 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
         type: 2}
+      propertyPath: Blocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 1998298327}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: Blocks.Array.data[1]
+      value: 
+      objectReference: {fileID: 462973643}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: BlockSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4936173110791606, guid: 8abed6a06294ee346833ca71a0344f74, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580095048864772, guid: 8abed6a06294ee346833ca71a0344f74, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
       propertyPath: BlocksLeft.Array.data[0]
       value: 
       objectReference: {fileID: 1998298327}
@@ -2325,6 +2362,16 @@ Prefab:
       propertyPath: BlocksRight.Array.data[0]
       value: 
       objectReference: {fileID: 462973643}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: currentStateRight
+      value: Moving To Position 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835786609062558, guid: 8abed6a06294ee346833ca71a0344f74,
+        type: 2}
+      propertyPath: currentStateLeft
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8abed6a06294ee346833ca71a0344f74, type: 2}
   m_IsPrefabParent: 0
