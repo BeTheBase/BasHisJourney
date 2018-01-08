@@ -318,9 +318,13 @@
     <Compile Include="Assets\Scripts\Managers\MouseManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Managers\RotationHandler.cs" />
+    <Compile Include="Assets\Scripts\Managers\WindowManager.cs" />
     <Compile Include="Assets\Scripts\Random\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\Random\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Random\PlayerPlatformerController.cs" />
+    <Compile Include="Assets\Scripts\Windows\GameOverWindow.cs" />
+    <Compile Include="Assets\Scripts\Windows\GenericWindow.cs" />
+    <Compile Include="Assets\Scripts\Windows\StartWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2D shader Technics (Part1)\Ghost effect\Shader\Light.shader" />
