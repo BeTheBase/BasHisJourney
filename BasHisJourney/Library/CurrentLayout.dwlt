@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 883, y: 471}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 885, y: 471}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 7527
+  controlID: 4017
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 956
     height: 947
-  m_MinSize: {x: 404, y: 342}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 7471
+  controlID: 3922
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 956
     height: 733
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 7506
+  controlID: 3923
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_MinSize: {x: 479, y: 471}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 7528
+  controlID: 4018
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_MinSize: {x: 479, y: 200}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 7529
+  controlID: 4019
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,8 +302,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 671
-  m_MinSize: {x: 279, y: 71}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 323.78137, y: -397.96783, z: -19.782768}
+    m_Target: {x: -3.0768595, y: 155.14886, z: -21.28506}
     speed: 2
-    m_Value: {x: 323.78137, y: -397.96783, z: -19.782768}
+    m_Value: {x: -3.0768595, y: 155.14886, z: -21.28506}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -499,9 +499,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2129.7427
+    m_Target: 2268.9124
     speed: 2
-    m_Value: 2129.7427
+    m_Value: 2268.9124
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -717,7 +717,7 @@ MonoBehaviour:
     width: 551
     height: 650
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 31.955078}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -753,9 +753,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc53ffff
-    m_LastClickedID: -44084
-    m_ExpandedIDs: 9efbffff00000000303000007c300000
+    m_SelectedIDs: 443a0000
+    m_LastClickedID: 14916
+    m_ExpandedIDs: 6c7dffffe284ffff9efbffff000000003030000094300000a83a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -817,19 +817,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/_Scripts/Managers
+    - Assets/_Sprites/UI
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Scripts/Managers
+  - Assets/_Sprites/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\basco\OneDrive\Documenten\GitHub\BasHisJourney\BasHisJourney
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 158}
-    m_SelectedIDs: 4a2a0000
-    m_LastClickedID: 10826
-    m_ExpandedIDs: 00000000fe27000024280000cc2a0000e22a00002c2b0000ea2b0000782e00003c2f0000b4310000b631000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 762a0000
+    m_LastClickedID: 10870
+    m_ExpandedIDs: 00000000fc27000022280000ca2a0000e02a00002a2b0000e82b0000762e00003a2f0000cc310000ce31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -857,7 +857,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe27000024280000cc2a0000e22a00002c2b0000ea2b0000782e00003c2f0000b4310000b631000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000fc27000022280000ca2a0000e02a00002a2b0000e82b0000762e00003a2f0000cc310000ce31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
