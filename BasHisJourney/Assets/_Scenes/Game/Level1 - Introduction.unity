@@ -473,7 +473,14 @@ MonoBehaviour:
   - Enjoy!
   MovementIntroText:
   - Oke! Lets try to move!
-  - Use the < and > arrow keys, or you can use A and D
+  - 'You can use: < and > arrow keys or you can use A and D'
+  - Press shift while walking for running
+  - Good job!
+  - Oke! Lets try to jump!
+  - 'You can use: space press it once for 1 jump or press it twice for 2 jumps'
+  - Good job!
+  - Now you know how to walk and how to jump!
+  - Walk to the right and start my journey!
 --- !u!224 &699388310 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
@@ -974,6 +981,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 23557853771934070, guid: 42a46e30ffda3bb4b8f8547fd3111a3e,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d7b87a8680724143b9909520ac77960, type: 2}
+    - target: {fileID: 1391554221074268, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
   m_IsPrefabParent: 0
@@ -1032,17 +1048,17 @@ Prefab:
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
@@ -1376,7 +1392,7 @@ Prefab:
     - target: {fileID: 224567909685023714, guid: 8b16f15ac142a984b8b5169b2bc20ac5,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224567909685023714, guid: 8b16f15ac142a984b8b5169b2bc20ac5,
         type: 2}
@@ -1520,7 +1536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1847441935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1687,7 +1703,7 @@ Prefab:
     - target: {fileID: 114110584997654068, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114287798016946826, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
@@ -1700,6 +1716,21 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114815797663882762, guid: b7f51e36b8919634294da2233242635b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114815936601099574, guid: b7f51e36b8919634294da2233242635b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114531265029887008, guid: b7f51e36b8919634294da2233242635b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107001129266820, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
       propertyPath: m_Enabled
       value: 1

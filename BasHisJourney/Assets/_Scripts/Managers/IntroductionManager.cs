@@ -36,14 +36,15 @@ public class IntroductionManager : MonoBehaviour
 
     void Update()
     {
+        //Intro with cinematic bars
         if (IntroductionText[IntroductionText.Length -1] == IntroductionText[_value] && _performance)
         {
-            Debug.Log("Laatste");
+            Debug.Log("CheckPerformance");
             NextButton.gameObject.SetActive(false);
-            IntroductionTextObject.CrossFadeAlpha(0,1f,false);
+            IntroductionTextObject.CrossFadeAlpha(0,2f,false);
+            
             StartCoroutine(SetAlphaAfterTime(IntroductionTextObject, 2, 255));
-            _introText = MovementIntroText;
-            IntroductionTextObject.text = _introText[0];
+            StartCoroutine(SetStringAfterTime(MovementIntroText, 2));
             foreach (var bar in CinematicBars)
             {
                 bar.CrossFadeAlpha(0, 1f, false);
@@ -59,15 +60,24 @@ public class IntroductionManager : MonoBehaviour
         IntroductionTextObject.text = _introText[0 + _value];
     }
 
-    IEnumerator SetInOrActive(GameObject obj, int _time, bool _active)
+    IEnumerator SetInOrActive(GameObject obj, int time, bool active)
     {
-        yield return new WaitForSeconds(_time);
-        obj.SetActive(_active);
+        yield return new WaitForSeconds(time);
+        obj.SetActive(active);
     }
 
-    IEnumerator SetAlphaAfterTime(Text obj, int _time, int _amount)
+    IEnumerator SetAlphaAfterTime(Text obj, int time, int amount)
     {
-        yield return new WaitForSeconds(_time);
-        obj.CrossFadeAlpha(_amount, _time, false);
+        yield return new WaitForSeconds(time);
+        obj.CrossFadeAlpha(amount, time, false);
+    }
+
+    IEnumerator SetStringAfterTime(string[] obj, int time)
+    {
+        yield return new WaitForSeconds(time);
+        _introText = obj;
+        IntroductionTextObject.text = _introText[0];
+        _value = 0;
+        NextButton.gameObject.SetActive(true);
     }
 }
