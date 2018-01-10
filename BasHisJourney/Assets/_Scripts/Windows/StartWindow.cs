@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StartWindow : GenericWindow
@@ -25,7 +26,7 @@ public class StartWindow : GenericWindow
 
     public void NewGame()
     {
-        Manager.Open(1);
+        SceneManager.LoadScene(0);
         Debug.Log("New Game Pressed");
     }
 

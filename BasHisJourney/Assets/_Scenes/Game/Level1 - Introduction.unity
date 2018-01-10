@@ -468,7 +468,7 @@ MonoBehaviour:
   IntroductionText:
   - Hey There!  Welkom To My Game
   - 'My Name Is: Bas De Koningh'
-  - I will guide you trough my journey!
+  - You play as me throughout my journey!
   - On the way we learn allot of things!
   - Enjoy!
   MovementIntroText:
@@ -481,6 +481,7 @@ MonoBehaviour:
   - Good job!
   - Now you know how to walk and how to jump!
   - Walk to the right and start my journey!
+  _introText: []
 --- !u!224 &699388310 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
@@ -566,6 +567,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988310232}
+--- !u!1 &1013454328 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1189130263650402, guid: b7f51e36b8919634294da2233242635b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1949626155}
+--- !u!114 &1013454329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013454328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdfaeb849d23604a801d6a204f3dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: 1
 --- !u!1 &1132536571
 GameObject:
   m_ObjectHideFlags: 0

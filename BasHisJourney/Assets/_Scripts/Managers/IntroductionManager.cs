@@ -12,9 +12,9 @@ public class IntroductionManager : MonoBehaviour
     public Image FadeGameIn;
     public string[] IntroductionText, MovementIntroText;
 
-    private string[] _introText;
+    public string[] _introText;
     private int _value;
-    private bool _performance;
+    private bool _performance, _performance2;
 
     void Awake()
     {
@@ -22,6 +22,7 @@ public class IntroductionManager : MonoBehaviour
             return;
 
         _performance = true;
+        _performance2 = true;
 
         _introText = IntroductionText;
 
@@ -37,7 +38,7 @@ public class IntroductionManager : MonoBehaviour
     void Update()
     {
         //Intro with cinematic bars
-        if (IntroductionText[IntroductionText.Length -1] == IntroductionText[_value] && _performance)
+        if (_introText.Last() == _introText[_value] && _performance)
         {
             Debug.Log("CheckPerformance");
             NextButton.gameObject.SetActive(false);
@@ -52,11 +53,21 @@ public class IntroductionManager : MonoBehaviour
 
             _performance = false;
         }
+
+        if (MovementIntroText.Last() == _introText[_value] && _performance2)
+        {
+            Debug.Log("CheckPerformance2");
+            IntroductionTextObject.CrossFadeAlpha(0,3f,false);
+            NextButton.gameObject.SetActive(false);
+
+            _performance2 = false;
+        }
     }
 
     public void NextText()
     {
         _value++;
+        Debug.Log(_value);
         IntroductionTextObject.text = _introText[0 + _value];
     }
 

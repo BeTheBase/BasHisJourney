@@ -291,6 +291,7 @@
     <Compile Include="Assets\_Scripts\Behaviors\AbstractBehavior.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\FaceDirection.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\Jump.cs" />
+    <Compile Include="Assets\_Scripts\Behaviors\NextScene.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\SelectGameObject.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\SimpelMovement.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\StickToWall.cs" />
