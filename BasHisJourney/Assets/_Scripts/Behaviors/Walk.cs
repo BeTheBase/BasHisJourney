@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class Walk : AbstractBehavior
 {
-    public float speed = 50f;
-    public float runMultiplier = 2f;
-    public bool running;
+    public float Speed = 50f;
+    public float RunMultiplier = 2f;
+    public bool Running;
 
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
-	
-	// Update is called once per frame
 	void Update ()
     {
-        running = false;
+        Running = false;
 
         var right = inputState.GetButtonValue(inputButtons[0]);
         var left = inputState.GetButtonValue(inputButtons[1]);
@@ -25,12 +18,12 @@ public class Walk : AbstractBehavior
 
         if (right || left)
         {
-            var tmpSpeed = speed;
+            var tmpSpeed = Speed;
 
-            if(run && runMultiplier > 0)
+            if(run && RunMultiplier > 0)
             {
-                tmpSpeed *= runMultiplier;
-                running = true;
+                tmpSpeed *= RunMultiplier;
+                Running = true;
             }
 
             var velX = tmpSpeed * (float)inputState.direction;

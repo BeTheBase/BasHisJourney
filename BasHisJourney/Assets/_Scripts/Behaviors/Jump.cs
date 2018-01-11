@@ -5,20 +5,13 @@ using UnityEngine;
 public class Jump : AbstractBehavior
 {
 
-    public float jumpSpeed = 200f;
-    public float jumpDelay = .1f;
-    public int jumpCount = 2;
+    public float JumpSpeed = 200f;
+    public float JumpDelay = .1f;
+    public int JumpCount = 2;
 
     protected float lastJumpTime = 0;
     protected int jumpsRemaining = 0;
-
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
 	
-	// Update is called once per frame
 	void Update ()
     {
         var canJump = inputState.GetButtonValue(inputButtons[0]);
@@ -28,12 +21,13 @@ public class Jump : AbstractBehavior
         {
             if (canJump && holdTime < .1f)
             {
-                jumpsRemaining = jumpCount - 1;
+                jumpsRemaining = JumpCount - 1;
                 OnJump();
             }
-        } else
+        }
+        else
         {
-            if (canJump && holdTime < .1f && Time.time - lastJumpTime > jumpDelay)
+            if (canJump && holdTime < .1f && Time.time - lastJumpTime > JumpDelay)
             {
                 if (jumpsRemaining > 0)
                 {
@@ -48,6 +42,6 @@ public class Jump : AbstractBehavior
     {
         var vel = body2d.velocity;
         lastJumpTime = Time.time;
-        body2d.velocity = new Vector2(vel.x, jumpSpeed);
+        body2d.velocity = new Vector2(vel.x, JumpSpeed);
     }
 }

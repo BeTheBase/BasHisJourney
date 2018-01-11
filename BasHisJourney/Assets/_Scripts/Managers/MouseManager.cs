@@ -6,7 +6,7 @@ public class MouseManager : MonoBehaviour
 {
     public GameObject Prefab;
     public Camera MainCamera;
-    public bool objectWeSelect = true;
+    public bool ObjectWeSelect = true;
     public string[] Walls;
     public int Timer = 0;
 
@@ -83,6 +83,6 @@ public class MouseManager : MonoBehaviour
     IEnumerator OptionTime()
     {
         yield return new WaitForSeconds(10);
-        objectWeSelect = true;
+        ObjectWeSelect = true;
     }
 }

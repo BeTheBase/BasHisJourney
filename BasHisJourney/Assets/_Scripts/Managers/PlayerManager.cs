@@ -34,7 +34,7 @@ public class PlayerManager : MonoBehaviour
             ChangeAnimationState(2);
         }
 
-        animator.speed = walkBehavior.running ? walkBehavior.runMultiplier : 1;
+        animator.speed = walkBehavior.Running ? walkBehavior.RunMultiplier : 1;
 	}
 
     void ChangeAnimationState(int value)

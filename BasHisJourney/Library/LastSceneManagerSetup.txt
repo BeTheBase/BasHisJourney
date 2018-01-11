@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Game/Level2 - The First Steps.unity
+- path: Assets/_Scenes/Game/Level1 - Introduction.unity
   isLoaded: 1
   isActive: 1
