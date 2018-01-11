@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 482320010}
   - component: {fileID: 482320009}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RightScriptImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 36f7a7f73f1f38f499f9c06a1d46571d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -565,6 +565,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: 1
+--- !u!114 &1013454341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013454328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474789e70abb81e479530dccfdd418fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptPanel: {fileID: 1319564538}
+  RightScriptImage: {fileID: 482320009}
+  ScriptImages:
+  - {fileID: 21300000, guid: 36f7a7f73f1f38f499f9c06a1d46571d, type: 3}
+  - {fileID: 21300000, guid: fc0c92932ce856b4bbbb2e362cdec11d, type: 3}
+  - {fileID: 21300000, guid: cbfc5e16c9ba6fc44b342498eb75529d, type: 3}
+  SceneIndex: 0
 --- !u!1 &1132536571
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,109 +685,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1139065967
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1139065968}
-  - component: {fileID: 1139065970}
-  - component: {fileID: 1139065969}
-  - component: {fileID: 1139065971}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1139065968
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1139065967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1319564539}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1139065969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1139065967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 681f7cce0f14f834b8ce5eb55722f5e1, type: 3}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "public class Walk : AbstractBehavior\n{\n    public float speed = 50f;\n
-    \   public float runMultiplier = 2f;\n    public bool running;\n\n\tvoid Update
-    ()\n    {\n        running = false;\n\n        var right = inputState.GetButtonValue(inputButtons[0]);\n
-    \       var left = inputState.GetButtonValue(inputButtons[1]);\n        var run
-    = inputState.GetButtonValue(inputButtons[2]);\n\n        if (right || left)\n
-    \       {\n            var tmpSpeed = speed;\n\n            if(run && runMultiplier
-    > 0)\n            {\n                tmpSpeed *= runMultiplier;\n                running
-    = true;\n            }\n\n            var velX = tmpSpeed * (float)inputState.direction;\n\n
-    \           body2d.velocity = new Vector2(velX, body2d.velocity.y);\n        }\n\n
-    \   }\n}"
---- !u!222 &1139065970
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1139065967}
---- !u!114 &1139065971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1139065967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!1001 &1260296601
 Prefab:
   m_ObjectHideFlags: 0
@@ -838,7 +753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1319564539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -850,7 +765,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482320008}
-  - {fileID: 1139065968}
   m_Father: {fileID: 1485572203}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1114,6 +1028,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344776115}
+--- !u!1001 &1468828642
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 83.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726472161133746, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d7655ac5828cb544a9992a3b6b1e72f2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1485572202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1082,7 @@ GameObject:
   - component: {fileID: 1485572205}
   - component: {fileID: 1485572204}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1143,8 +1099,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791331518}
-  - {fileID: 699388310}
   - {fileID: 1894298469}
+  - {fileID: 699388310}
   - {fileID: 988310233}
   - {fileID: 1847441935}
   - {fileID: 1319564539}
@@ -1180,14 +1136,11 @@ MonoBehaviour:
   - On the way we learn allot of things!
   - Enjoy!
   MovementIntroText:
-  - Oke! Lets try to move!
-  - 'You can use: < and > arrow keys or  A and D'
-  - Press shift while walking for running
+  - Hey! Look! Its a C#!
+  - Try to walk in it!
+  - Press < > to walk and hold shift for running
   - Good job!
-  - Oke! Lets try to jump!
-  - 'You can use: space press it once for 1 jump or press it twice for 2 jumps'
-  - Good job!
-  - Now you know how to walk and how to jump!
+  - We have learned how to walk!
   - Walk to the right and start my journey!
   _introText: []
 --- !u!114 &1485572205
@@ -1230,49 +1183,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 306
+      value: 396
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalPosition.y
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4673469058112226, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+    - target: {fileID: 4119863033176822, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 23557853771934070, guid: 42a46e30ffda3bb4b8f8547fd3111a3e,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7d7b87a8680724143b9909520ac77960, type: 2}
-    - target: {fileID: 1391554221074268, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
-      propertyPath: m_Name
-      value: Door
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 42a46e30ffda3bb4b8f8547fd3111a3e, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 8e71fde3026f9a34dbdff66854d8cbe9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1558815554
 Prefab:
@@ -1324,12 +1268,12 @@ Prefab:
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 240
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -91
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
@@ -1344,22 +1288,22 @@ Prefab:
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224900912899643310, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
@@ -1777,7 +1721,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1485572204}
     - target: {fileID: 114524984243440378, guid: 8b16f15ac142a984b8b5169b2bc20ac5,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1902,7 +1846,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1485572203}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1984,7 +1928,7 @@ Prefab:
     - target: {fileID: 114110584997654068, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114287798016946826, guid: b7f51e36b8919634294da2233242635b,
         type: 2}

@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Game/Level2 - The First Steps.unity
     guid: 00de6ab3a7e6a054e9e69040b3d36945
   - enabled: 1
+    path: Assets/_Scenes/Game/Level3 - Manipulation.unity
+    guid: 67bba8953ee128b4b86bbe0e80c85321
+  - enabled: 1
     path: Assets/_Scenes/Game/GameWindows.unity
     guid: a7bc3a1f5ba25854eac455f5d1cf88dd

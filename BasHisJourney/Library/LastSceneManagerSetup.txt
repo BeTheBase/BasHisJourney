@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Game/Level1 - Introduction.unity
+- path: Assets/_Scenes/Game/Level3 - Manipulation.unity
   isLoaded: 1
   isActive: 1

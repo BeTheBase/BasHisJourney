@@ -289,6 +289,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Behaviors\AbstractBehavior.cs" />
+    <Compile Include="Assets\_Scripts\Behaviors\CSharp.cs" />
+    <Compile Include="Assets\_Scripts\Behaviors\CSharpPickup.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\FaceDirection.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\Jump.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\NextScene.cs" />
