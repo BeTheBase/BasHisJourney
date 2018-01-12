@@ -293,6 +293,7 @@
     <Compile Include="Assets\_Scripts\Behaviors\CSharpPickup.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\FaceDirection.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\Jump.cs" />
+    <Compile Include="Assets\_Scripts\Behaviors\MovingBlocks.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\NextScene.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\SelectGameObject.cs" />
     <Compile Include="Assets\_Scripts\Behaviors\SimpelMovement.cs" />
@@ -340,22 +341,12 @@
     <Compile Include="Assets\Modern UI Pack\Scripts\RatingSystem.cs" />
     <Compile Include="Assets\Modern UI Pack\Scripts\SwitchAnim.cs" />
     <Compile Include="Assets\Modern UI Pack\Scripts\ToggleAnim.cs" />
-    <Compile Include="Assets\x2D shader Technics (Part1)\HighLight and Magnifier\Scripts\Gyzmo.cs" />
-    <Compile Include="Assets\x2D shader Technics (Part1)\Plants\Scripts\AddMaterial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Draw Call Minimizer\Example\ReadMe.txt" />
     <None Include="Assets\Modern UI Pack\Read Me.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
-    <None Include="Assets\x2D shader Technics (Part1)\Ghost effect\Shader\Light.shader" />
-    <None Include="Assets\x2D shader Technics (Part1)\HighLight and Magnifier\Shaders\Circle.shader" />
-    <None Include="Assets\x2D shader Technics (Part1)\Plants\README.txt" />
-    <None Include="Assets\x2D shader Technics (Part1)\Plants\Shaders\SpriteWaver.shader" />
-    <None Include="Assets\x2D shader Technics (Part1)\README.txt" />
-    <None Include="Assets\x2D shader Technics (Part1)\Shield and UV panel and Dissolve\Shader\Shield.shader" />
-    <None Include="Assets\x2D shader Technics (Part1)\Shield and UV panel and Dissolve\Shader\Shieldv2.shader" />
-    <None Include="Assets\x2D shader Technics (Part1)\Shield and UV panel and Dissolve\Shader\uv_panel.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

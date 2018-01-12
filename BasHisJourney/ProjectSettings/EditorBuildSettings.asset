@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/Game/GameWindows.unity
+    guid: a7bc3a1f5ba25854eac455f5d1cf88dd
+  - enabled: 1
     path: Assets/_Scenes/Game/Level1 - Introduction.unity
     guid: f225bcbc26c7d764a8404bc9ab244aa3
   - enabled: 1
@@ -15,5 +18,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Game/Level3 - Manipulation.unity
     guid: 67bba8953ee128b4b86bbe0e80c85321
   - enabled: 1
-    path: Assets/_Scenes/Game/GameWindows.unity
-    guid: a7bc3a1f5ba25854eac455f5d1cf88dd
+    path: Assets/_Scenes/Game/Level4 - WallJumping.unity
+    guid: 177219b1284b4e6498e1a269f81b57ec
+  - enabled: 1
+    path: Assets/_Scenes/Game/Level5 - Triggerd.unity
+    guid: 6c521af06f97d244182d1c91e91c4dec

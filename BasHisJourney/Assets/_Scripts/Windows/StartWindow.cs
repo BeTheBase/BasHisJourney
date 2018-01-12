@@ -26,7 +26,7 @@ public class StartWindow : GenericWindow
 
     public void NewGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Debug.Log("New Game Pressed");
     }
 

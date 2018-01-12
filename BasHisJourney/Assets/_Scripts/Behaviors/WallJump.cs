@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WallJump : AbstractBehavior
 {
-    public Vector2 jumpVelocity = new Vector2(50, 200);
-    public bool jumpingOffWall;
-    public float resetDelay = .2f;
+    public Vector2 JumpVelocity = new Vector2(50, 200);
+    public bool JumpingOffWall;
+    public float ResetDelay = .2f;
 
     private float timeElapsed = 0;
 
@@ -17,24 +17,24 @@ public class WallJump : AbstractBehavior
         {
             var canJump = inputState.GetButtonValue(inputButtons[0]);
 
-            if (canJump && !jumpingOffWall)
+            if (canJump && !JumpingOffWall)
             {
                 inputState.direction = inputState.direction == Directions.Right ? Directions.Left : Directions.Right;
-                body2d.velocity = new Vector2(jumpVelocity.x * (float)inputState.direction, jumpVelocity.y);
+                body2d.velocity = new Vector2(JumpVelocity.x * (float)inputState.direction, JumpVelocity.y);
 
                 ToggleScripts(false);
-                jumpingOffWall = true;
+                JumpingOffWall = true;
             }
         }
 
-        if (jumpingOffWall)
+        if (JumpingOffWall)
         {
             timeElapsed += Time.deltaTime;
 
-            if (timeElapsed > resetDelay)
+            if (timeElapsed > ResetDelay)
             {
                 ToggleScripts(true);
-                jumpingOffWall = false;
+                JumpingOffWall = false;
                 timeElapsed = 0;
             }
         }
